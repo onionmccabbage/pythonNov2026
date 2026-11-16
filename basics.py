@@ -15,3 +15,13 @@ print( c[10] ) # this will be 'l'
 # we may use [] to 'slice' any part of a collection. All collection start at zero
 print( c[0:14] ) # [start:stop-before]
 # other data types
+boo = True # or False - the boolean data type
+# we also have lists and tuples
+l = [4,3,2,5.5,-2.11, 'hello', False] # here we have an ordinal mutable collection of any data type
+# mutable means we can change existing values for other values
+l[4] = -99
+# other list operations
+l.append('new')
+l.insert(3, 'also')
+l.pop() # removes the very last entry from a collection
+print( type(l), l, l[4:6] )
