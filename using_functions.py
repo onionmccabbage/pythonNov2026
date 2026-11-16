@@ -4,7 +4,8 @@
 def checkNumeric(value):
     '''check if the incoming argument value is a number
     If it is, just return it. Otherwise, return 1 as a default'''
-    if type(value) == int:
+    # if type(value) == int or type(value) == float:
+    if type(value) in (int, float): # is the type in the tuple of acceptable types
         return value # all good
     else:
         return 1 # set a sensible default
