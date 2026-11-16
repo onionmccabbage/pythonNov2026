@@ -32,6 +32,7 @@ all my code wil be here:
 - the if statement for conditional logic
 - for, while, break and pass
 > print formatting
+- dealing with executable code when imported
 - after lunch review exercise
 - dictionaries, set
 - import, libraries and modules
