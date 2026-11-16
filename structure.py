@@ -24,7 +24,15 @@ if value.isnumeric(): # isnumeric allows digits only.
 else:
     print(f'{value} is not a positive number')
 
-# the code block ends when there is no more indentation
+# the code block ends when there is no more 
+# we may write a loop like this
+l = [2,4,6,8,10]
+for i in l:
+    if i == num:
+        print(f'{i} matches {num}')
+    else:
+        print(f'{i} does not match {num}')
+
 
 
 
