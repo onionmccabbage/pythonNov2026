@@ -35,10 +35,10 @@ all my code wil be here:
 > print formatting
 > dealing with executable code when imported
 > after lunch review exercise
-- dictionaries, set
+> dictionaries, set
 > import, libraries and modules
 - functions and defaults
-- packages (simply a folder containing python files)
+> packages (simply a folder containing python files)
 
 #### Tuesday
 - quick review of where we got to
