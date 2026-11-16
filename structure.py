@@ -20,9 +20,9 @@ print(value.isnumeric())
 if value.isnumeric(): # isnumeric allows digits only.
     num = int(value) # cast the sting to an int
     if num >0:
-        print('Thank you')
+        print(f'Thank you for typing {num}') # f'' lets us format the string
 else:
-    print('not a positive number')
+    print(f'{value} is not a positive number')
 
 # the code block ends when there is no more indentation
 
