@@ -25,3 +25,6 @@ l.append('new')
 l.insert(3, 'also')
 l.pop() # removes the very last entry from a collection
 print( type(l), l, l[4:6] )
+
+# tuple is an ordinal immutable collection of any data type
+d = (6,5,4) # once created we cannot mutabe the value of a tuple
