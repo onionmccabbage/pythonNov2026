@@ -32,7 +32,8 @@ for (k,v) in g.items():
 # we also have a 'set' data type
 # a set is not ordinal and may contain most simple data types
 # a set will ensure its members are unique (each member may only occur once)
-data = {3, 2, 7, -2, 'a', True} # a set contains only values
+data = {3, 2, 'a', 7, 3 -2, 'a', True} # a set contains only values
 data.add(99)
 data.remove(True)
+# NB there is no predictable order to the members of a set
 print( data, type(data) )
