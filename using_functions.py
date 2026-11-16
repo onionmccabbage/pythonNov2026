@@ -34,7 +34,3 @@ print(f) # False
 s = addNumbers() # the defaults will be used
 r = addNumbers(5, '4')
 print(r)
-
-
-ype(a)== int and type(b)== int: # and or
-        # we have integers
