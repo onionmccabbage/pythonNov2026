@@ -1,4 +1,6 @@
 # maths
+# + - / *
+# // modulo, % remainder and ** raise to power
 
 a = 3
 b = 8.3

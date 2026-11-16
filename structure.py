@@ -32,11 +32,3 @@ for i in l:
         print(f'{i} matches {num}')
     else:
         print(f'{i} does not match {num}')
-
-
-
-
-
-
-
-

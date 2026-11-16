@@ -1,6 +1,6 @@
 # there are a few kinds of loop in Python
 
-def game():
+def game(): # we are not obliged to provide function arguments
     '''Here we will ask the user to enter a value
     If they enter 'quit' then the program ends
     if a positive integer is entered, convert and show the value
