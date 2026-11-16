@@ -8,7 +8,7 @@ print( type(a), type(b) )
 
 # Python has several data types
 # all text is contained in a string type
-c = 'here is a long string of characters inside quotes'
+c ='here is a long string of characters inside quotes'
 print(c, type(c)) # a string is an immutable ordinal collection of characters
 # ordinal means the collection is in a numeric order: 0, 1, 2, 3 etc.
 print( c[10] ) # this will be 'l'
