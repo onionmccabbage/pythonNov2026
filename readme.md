@@ -15,6 +15,9 @@ all my code wil be here:
 
 #### Monday
 - Welcome and intros
+- Tech check: somewhere to write code and Python to run it
+  - https://www.python.org/
+  - https://code.visualstudio.com/download
 - where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
 - maths operators and data types
