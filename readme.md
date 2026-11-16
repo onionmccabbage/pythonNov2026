@@ -27,13 +27,14 @@ all my code wil be here:
 > identifiers (names for stuff)
 > boolean True and False
 > print() and input()
+> NB code in Python is case-sensitive - watch for upper/lower case of stuff
 > validate input (remember, all input is string)
 - type and type conversion
-- the if statement for conditional logic
-- for, while, break and pass
+> the if statement for conditional logic
+> for, while, break and pass
 > print formatting
 - dealing with executable code when imported
-- after lunch review exercise
+> after lunch review exercise
 - dictionaries, set
 - import, libraries and modules
 - functions and defaults
