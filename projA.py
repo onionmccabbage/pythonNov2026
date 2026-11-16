@@ -15,7 +15,7 @@ print(r) # the same random floating point number
 
 
 # the 'range' object
-w = range(0,11,2) # (start, stop-before, step=1)
+w = range(0,11,1) # (start, stop-before, step=1)
 print(type(w))
 for i in w:
     print(i) # 0, 2, 4, 6, 8, 10
@@ -29,3 +29,5 @@ for i in w:
     if i/2 != i//2:
         print(f'{i} is odd')
     # is is a square number
+    if i**0.5 == int(i**0.5):
+        print(f'{i} is a square number')
