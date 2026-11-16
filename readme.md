@@ -11,7 +11,7 @@ Toby Dussek
 * 4:30 end
 
 all my code wil be here:
-    
+* https://github.com/onionmccabbage/pythonNov2026
 
 #### Monday
 - Welcome and intros
@@ -24,10 +24,10 @@ all my code wil be here:
 - identifiers
 - boolean True and False
 - print() and input()
-- validate input (remember - all input is string)
+- validate input (remember, all input is string)
 - type and type conversion
 - the if statement for conditional logic
-- for, while, break, continue and pass
+- for, while, break and pass
 - print formatting
 - after lunch review exercise
 - dictionaries, set
@@ -36,7 +36,6 @@ all my code wil be here:
 - packages (simply a folder containing python files)
 
 #### Tuesday
-
 - quick review of where we got to
 - if __name__ == '__main__'
 - range, generators
@@ -50,7 +49,6 @@ all my code wil be here:
 - using requests (to access web API via HTTP)
 - strings with triple quotes
 - exception handling (try-except etc.)
-- scope
 - debug tools   
 - review exercise
 - Text File input and output
@@ -66,17 +64,16 @@ all my code wil be here:
     use built in structures until they do not suit the purpose (then use classes)
 - Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
-- get/set as property decorators @property
+- get/set and property decorators @property
 - name mangling (`__`) and `__slots__` (a bit like private)
 - review exercise
-- custom generator and yield
 - map and filter
-- system path (where Python looks when importing, etc.)
 
 https://python.org
-https://leanrpython.org
+https://learnpython.org
 https://pynative.com
 
 
 end of course: feedback about the three days
-
+- BBC Node.js Training Course - 9-11 November 2026
+- https://forms.cloud.microsoft/e/fp0adqhZnk
