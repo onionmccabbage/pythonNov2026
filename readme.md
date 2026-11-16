@@ -20,14 +20,14 @@ all my code wil be here:
   - https://code.visualstudio.com/download
 - where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
-- maths operators and data types
+> maths operators and data types
 > indentation
 > immutable strings
 > lists and tuples (and memory efficiency)
 > identifiers (names for stuff)
 > boolean True and False
 > print() and input()
->validate input (remember, all input is string)
+> validate input (remember, all input is string)
 - type and type conversion
 - the if statement for conditional logic
 - for, while, break and pass
