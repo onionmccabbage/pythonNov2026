@@ -19,4 +19,5 @@ def game():
         else:
             print('We need a number, try again')
 
-
+# we must remember to actully call our function!!
+game()
