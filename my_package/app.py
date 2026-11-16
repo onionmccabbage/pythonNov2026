@@ -4,5 +4,8 @@ from util import showtoday
 def doStuff():
     return f'Today is {showtoday()}'
 
-t = doStuff()
-print( t )
+if __name__ == '__main__':
+    t = doStuff()
+    print( t )
+
+    print( __name__ )

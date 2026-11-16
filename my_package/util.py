@@ -7,6 +7,11 @@ def showtoday():
     prettyDate = datetime.strftime(now, '%d-%m-%Y %H:%M:%S') # provide a 'picture' for the date
     return prettyDate
 
-# exercise this module
-n = showtoday()
-print( n )
+if __name__ == '__main__':
+    # exercise this module
+    n = showtoday()
+    print( n )
+
+    # what does python call this module?
+    # every module we run directly is called '__main__'
+    print( f'This module is currently known as {__name__}' )
