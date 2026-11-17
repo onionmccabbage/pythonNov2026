@@ -8,7 +8,7 @@ print(sys.path)
 # sys also includes argv which is a list of arguments
 # sys.argv[0] is always the name of the currently running module
 # we may choose to inject further system argument variables
-# tis is useful, since 'input' is rarely gonig to have a usef to respond!!!!
+# tis is useful, since 'input' is rarely going to have a user to respond!!!!
 for _ in sys.argv:
     print(_)
 
