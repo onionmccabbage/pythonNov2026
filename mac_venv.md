@@ -13,3 +13,6 @@ You can verify with:
 To exit the virtual environment just type:
 
 `deactivate`
+
+#### More general details here
+- https://python.land/virtual-environments/virtualenv
