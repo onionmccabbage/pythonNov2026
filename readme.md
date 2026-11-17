@@ -42,6 +42,7 @@ all my code wil be here:
 
 #### Tuesday
 - quick review of where we got to
+- using venv
 - if __name__ == '__main__'
 - range, generators
 - comprehensions
