@@ -3,8 +3,9 @@
 def fileReader():
     '''Retrieve the contents of a persistent text file'''
     try:
-        with open('log.txt', 'r') as fout: # text is the default
-            i = fout.read()
+        with open('log.txt', 'r') as fin: # text is the default
+            # i = fin.read() # read() retrievs the entire contents as one continous string
+            i = fin.readlines() # readlines() retrieves the entire contents into a list of strings
             return i
     except Exception as err:
         print(err)
