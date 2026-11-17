@@ -56,8 +56,8 @@ all my code wil be here:
 > strings with triple quotes
 > exception handling (try-except etc.)
 - debug tools
-- resolve the byte writer example   
-- review exercise
+> resolve the byte writer example   
+> review exercise
 > Text File input and output (also bytes)
 > the nature of file access objects
 
