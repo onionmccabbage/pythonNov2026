@@ -5,15 +5,16 @@
 def makeBytes(f):
     '''convert the incoming values in 'f' to a bytestring'''
     # b = b'{f}' # this converts a string to a byte-encoded string
-    b = f.encode() # this also converts to a byte string
-    return b
+    # b = f.encode() # this also converts to a byte string
+    b = bytes(f)
 
 def writeBytes(b):
     '''commit the bytes in 'b' to a byte file'''
     try:
         with open('bytefile', 'ab')  as bout:
-            u = b.encode() # even if it is already encoded, we just make sure
-            bout.write(u)
+            if type(b)==str:
+                b = bytes(b) # even if it is already encoded, we just make sure
+            bout.write(b)
     except Exception as err:
         print(err)
 
@@ -27,10 +28,17 @@ def readBytes():
         print(err)
 
 if __name__ == '__main__':
-    w = str(0x007) # 0x lets us work in hexadecimal
+    w = 0x007 # 0x lets us work in hexadecimal
     x = makeBytes(w)
     print(w, type(w))
     f = 'simple plain text'
-    writeBytes(f)
+    # here we build a byteArray (a collection of byte values)
+    d = bytearray()
+    for i in range(0,64):
+        d.append(i) 
+    writeBytes(d)
     k = readBytes()
     print(k)
+
+# '© ? ?' in 'utf-8' is 
+# b'\xC2\xA9\x20\xF0\x9D\x8C\x86\x20\xE2\x98\x83'
