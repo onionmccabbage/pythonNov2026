@@ -1,5 +1,4 @@
 ## Python Review 2: the Star Wars API (Swapi)
-
 * Ask the user for a category (and also for an id)
 * Use these to make a call to an API and show the results
 
@@ -9,15 +8,12 @@ This is a chance to explore Python
   (although it can be one single file if you like!!)
 - Look online, talk to each other, ask me etc.
 There will be an opportunity to share your code at the end
-
 #### Details:
-
 * Write a new module which asks the user for a 'category' 
 (remember to use input() which always returns a string)
 * Validate the user input as follows:
 - The category may only be one of 'people', 'planets', 'starships' or 'species'
   (maybe use the 'in' operator to see if the value is in a tuple of permitted values)
-
 * Also ask the user to enter an id
 - The id must be a positive integer in the range 1-8
 * After you ask the user for category value, build a string something like this: 
@@ -38,3 +34,4 @@ There will be an opportunity to share your code at the end
 * If category or id is missing or unacceptable, you should provide sensible defaults
 * For example, if id is a floating point number or a string, try to cast it as an int()
 * Import and use your 'cleanup' function to sanitize the user-provided data
+* When you have retrieved some data, write it to a text file
