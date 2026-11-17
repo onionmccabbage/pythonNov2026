@@ -5,7 +5,7 @@ def fileWriter(s):
     try:
         with open('log.txt', 'a') as fout: # text is the default
             fout.write(s)
-
+            fout.write('\n') # also \t
             # fout.close() # not needed, since 'with' tidies up anyway
             # when the 'with' block ends, the fout resource will be released automatically
     except Exception as err:
