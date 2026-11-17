@@ -13,13 +13,21 @@ def cleanup(category='users', id=0):
     else:
         category = 'people'
     # we should have some try-except here
-    id = int( float(id) )
+    try:
+        id = int( float(id) )
+    except ValueError as ve:
+        print(f'{id} is not a number')
+    except Exception as err:
+        print(err)
+    finally:
+        # a good place to tidy up
+        print('this block will always run, error or not')
     if id not in range(1,9): # stop before 9
         id = 1 # set a sensible default
     cleaned_data = {'category':category, 'id':id} # build a dictionary
     return cleaned_data
 
 if __name__ == '__main__':
-    experiment = cleanup(id=3, category='posts')
+    experiment = cleanup(id='three', category='posts')
     experiment = cleanup( category='teatime')
     print(experiment)
