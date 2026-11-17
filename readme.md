@@ -42,19 +42,19 @@ all my code wil be here:
 
 #### Tuesday
 - quick review of where we got to
-- using venv
+> using venv
 - if __name__ == '__main__'
 - range, generators
 - comprehensions
-- to add libraries to python:
+> to add libraries to python:
   - python3 -m ensurepip
   - python3 –m pip install requests (or any other library you need)
   or 
   - pip3 install requests
     to see what libraries are already installed: pip list
-- using requests (to access web API via HTTP)
-- strings with triple quotes
-- exception handling (try-except etc.)
+> using requests (to access web API via HTTP)
+> strings with triple quotes
+> exception handling (try-except etc.)
 - debug tools   
 - review exercise
 - Text File input and output
