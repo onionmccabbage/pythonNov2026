@@ -5,8 +5,11 @@ def fileReader():
     try:
         with open('log.txt', 'r') as fin: # text is the default
             # i = fin.read() # read() retrievs the entire contents as one continous string
-            i = fin.readlines() # readlines() retrieves the entire contents into a list of strings
-            return i
+            # i = fin.readlines() # readlines() retrieves the entire contents into a list of strings
+            mylines = [] # in this case we DO need to initiate the empty list
+            for k in range(0,10):
+                mylines.append (fin.readline()) # readline() will read the next line (until \n or EOF)
+            return mylines
     except Exception as err:
         print(err)
 
