@@ -17,7 +17,7 @@ for _ in s:
 
 # generators
 # a bit like a range, but with added calculations
-g = (i**2 for i in r)
+g = (i**2 for i in r) # NB we use () to make a generator
 print( type(g) )
 for _ in g:
     print(_)
@@ -32,3 +32,8 @@ def useful(n):
 f = (useful(i) for i in r)
 for _ in f:
     print(_)
+
+# comprehensions
+# a comprehension will comprehensively deal with every member of a collection
+j = [i**2 for i in r] # this is a list comprehension []
+print(j, type(j))
