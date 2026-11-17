@@ -20,6 +20,15 @@ def getAllPhotos():
     except Exception as err: # if anything goes wrong, we run this block
         print(f'Something went wrong: {err}')
 
+def getOnePhoto(id=1): # set a sensible default
+    '''use an id to get only one matching photo'''
+    # we would usually validate that id is indeed an acceptable value
+    try:
+        photo = requests.get(f'http://jsonplaceholder.typicode.com/photos/{id}')
+        return photo.json()
+    except Exception as err:
+        print(f'Something went wrong: {err}')
+
 if __name__ == '__main__':
     '''exercise this module'''
     r = getAllPhotos()
@@ -27,4 +36,7 @@ if __name__ == '__main__':
     # we may explore this structure
     print( r[5]['title'] )
     print(type(r))
+    # use our single-photo getter
+    s = getOnePhoto(42)
+    print(s)
 
