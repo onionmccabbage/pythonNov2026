@@ -3,13 +3,15 @@
 def fileWriter(s):
     '''Commit the contents of 's' to a persistent text file'''
     try:
+        # 'x' is exclusive access (fails if the file already exists)
+        # 'w' means (over)write any existing content
         with open('log.txt', 'a') as fout: # text is the default
             fout.write(s)
             fout.write('\n') # also \t
             # fout.close() # not needed, since 'with' tidies up anyway
             # when the 'with' block ends, the fout resource will be released automatically
     except Exception as err:
-        pass # we may choose to ignore the exception
+        print(err)
 
 
 
