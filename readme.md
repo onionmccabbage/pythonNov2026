@@ -29,7 +29,7 @@ all my code wil be here:
 > print() and input()
 > NB code in Python is case-sensitive - watch for upper/lower case of stuff
 > validate input (remember, all input is string)
-- type and type conversion
+> type and type conversion
 > the if statement for conditional logic
 > for, while, break and pass
 > print formatting
@@ -42,7 +42,7 @@ all my code wil be here:
 
 #### Tuesday
 > using venv
-- if __name__ == '__main__'
+> if __name__ == '__main__'
 > range, generators
 > comprehensions
 > to add libraries to python:
@@ -61,18 +61,18 @@ all my code wil be here:
 > the nature of file access objects
 
 #### Wednesday
-- quick review of where we got to
-- in Python EVERTHING is an Object - every function, every class every module....
+> quick review of where we got to
+> in Python EVERTHING is an Object - every function, every class every module....
 > whenever we see __nnn__ this belongs to Python. Called dunder
-- any input or output is necessarily slow: I/O bound
-- functions live in classes, which live in modules which live in packages (folder)
+> any input or output is necessarily slow: I/O bound
+> functions live in classes, which live in modules which live in packages (folder)
 - global and local scope 
-- data modelling structures: 
+> data modelling structures: 
     use built in structures until they do not suit the purpose (then use classes)
-- Objects and Classes (OOP)
+> Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
-- get/set and property decorators @property
-- name mangling (`__`) and `__slots__` (a bit like private)
+> get/set and property decorators @property
+> name mangling (`__`) and `__slots__` (a bit like private)
 - review exercise
 - map and filter
 

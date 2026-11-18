@@ -1,7 +1,8 @@
 ## Python Review 3
+#### 1hr 10mins (until 2:55)
 
 - Alter these instructions to suit your thinking
-- Aim for good architecture (maybe use separate modules, remember 'if __name__...')
+- Aim for good architecture (maybe use separate modules, remember `if __name__...`)
 - Look online, talk to each other, ask me etc.
 - There will be an opportunity to share your code
 
