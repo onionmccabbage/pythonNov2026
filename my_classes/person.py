@@ -35,6 +35,9 @@ class Person(): # the () are optional
         '''Everything in Python has a __str__ method
          This method is called whenever we 'print' '''
         return f'{self.name} is {self.age} years old'
+    def __repr__(self):
+        '''__repr__ is used by immediate-mode python to represent an instance'''
+        return f'{self.age} year old {self.name}'
 
 if __name__ == '__main__':
     # exercise the code within this module
@@ -48,7 +51,7 @@ if __name__ == '__main__':
     print(p2.age, p2.name)
     p1 = Person('Floella', 70) # this will make the __init__ method run once
     try:
-        p1.name = True  #oops!!!
+        p1.name = True # oops!!!
     except TypeError as te:
         print(te)
     # we use dot notation to access members of the class instance
