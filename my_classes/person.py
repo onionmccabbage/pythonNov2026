@@ -28,6 +28,9 @@ class Person(): # the () are optional
             self.__age = new_age
         else:
             raise TypeError('Age must be a positive integer')
+    def birthday(self):
+        '''increment the age by one'''
+        self.age = self.age + 1
     def __str__(self):
         '''Everything in Python has a __str__ method
          This method is called whenever we 'print' '''
@@ -41,6 +44,7 @@ if __name__ == '__main__':
     # print(p2.__name, p2.__age) #
 
     p2.age = 55 # all good 
+    p2.birthday() # call the birthday method of the class
     print(p2.age, p2.name)
     p1 = Person('Floella', 70) # this will make the __init__ method run once
     try:
@@ -60,5 +64,5 @@ def fnDoNothing():
     # arbitrary properties
 fnDoNothing.wibblywoo = 'wow'
 print(fnDoNothing.wibblywoo)
-p1.ooblywoobly = 'nonsense'
-print(p1.ooblywoobly)
+# p1.ooblywoobly = 'nonsense'
+# print(p1.ooblywoobly)
