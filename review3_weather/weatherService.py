@@ -10,7 +10,7 @@ class WeatherGetter():
             'weather?q={}&units={}&APPID=48f2d5e18b0d2bc50519b58cce6409f1')
         try:
             uri = url_template.format(city, 'metric')
-            print(uri)
+            # print(uri)
             response = requests.get(uri)
             results = response.json()
             self.temperature = results['main']['temp']

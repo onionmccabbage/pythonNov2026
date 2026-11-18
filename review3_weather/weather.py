@@ -3,6 +3,7 @@ class Weather():
     The Weather class takes a non-empty string for the description
     and a floating point number for the temperature
     '''
+    __slots__ = ['__city', '__desc', '__temp']
     def __init__(self, city, desc, temp):
         self.city = city
         self.desc = desc # make use of the setter methods
@@ -36,7 +37,7 @@ class Weather():
             self.__temp = 12 # a reasonable default
     def __str__(self):
         # output a nicely formatted weather report
-        report  = f'The weather in {self.city} is {self.desc} at {self.temp}C'
+        report  = f'The weather in {self.city.title()} is {self.desc} at {self.temp}C'
         return report
 
 if __name__ == '__main__':

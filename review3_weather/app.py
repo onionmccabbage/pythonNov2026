@@ -1,9 +1,11 @@
 from weatherService import WeatherGetter
 
 def main():
+    # initialize some stuff
     cityList = ['Dover', 'London', 'Salford']
     reportList = []
     weatherGetterInstance = WeatherGetter()
+
     for city in cityList:
         report = weatherGetterInstance.findWeather(city)
         reportList.append(report)
