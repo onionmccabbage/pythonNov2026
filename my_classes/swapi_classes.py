@@ -17,4 +17,36 @@ class Swapi():
             self.__name = new_name
         else:
             # self.__name = 'default' # we may choose to set a sensible default
-            raise TypeError('Name mus be a non empty string')
+            raise TypeError('Name must be a non empty string')
+
+# we would usually write each class in separate module
+class Species(Swapi):
+    __slots__ = ['__name', '__language']
+    def __init__(self, n, language):
+        super().__init__(n)
+        self.language = language # this calls the setter method
+    @property
+    def language(self):
+        return self.__language
+    @language.setter
+    def language(self, l):
+        if type(l)==str and len(l)>0:
+            self.__language = l
+        else:
+            raise TypeError('Language must be a non-empty string')
+
+class Planet(Swapi):
+    __slots__ = ['__name', '__climate']
+    def __init__(self, n, climate):
+        super().__init__(n)
+        self.climate = climate
+    @property
+    def climate(self):
+        return self.__climate
+    @climate.setter
+    def climate(self, c):
+        if type(c)==str and len(c)>0:
+            self.__climate = c
+        else:
+            raise TypeError('Climate must be a non-empty string')
+
