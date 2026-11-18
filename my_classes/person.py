@@ -1,5 +1,4 @@
 # here we will create our own class
-
 class Person(): # the () are optional
     '''This class will encapsulate data related to person
     name (non-empty string) and age (positive integer)'''
@@ -31,8 +30,14 @@ class Person(): # the () are optional
 if __name__ == '__main__':
     # exercise the code within this module
     # we can make instances of our class
+    p2 = Person('Oenid', 32)
+    p2.age = 55 # all good 
+    print(p2.age, p2.name)
     p1 = Person('Floella', 70) # this will make the __init__ method run once
-    p1.name = True
+    try:
+        p1.name = True  #oops!!!
+    except TypeError as te:
+        print(te)
     # we use dot notation to access members of the class instance
     print( p1, p1.name, p1.age, type(p1) )
     # we can make instances of any class
