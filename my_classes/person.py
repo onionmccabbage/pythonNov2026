@@ -2,6 +2,7 @@
 class Person(): # the () are optional
     '''This class will encapsulate data related to person
     name (non-empty string) and age (positive integer)'''
+    __slots__ = ['__name', '__age']
     # a class has 'properties' (things that belong to the class)
     # the __init__ will run once, when we create an instance
     def __init__(self, name, age): # any class function MUST take 'self' as an argument
@@ -52,3 +53,12 @@ if __name__ == '__main__':
     l1 = list() # short cut is l1 = []
     t1 = tuple()
     d1 = dict()
+
+def fnDoNothing():
+    pass
+
+    # arbitrary properties
+fnDoNothing.wibblywoo = 'wow'
+print(fnDoNothing.wibblywoo)
+p1.ooblywoobly = 'nonsense'
+print(p1.ooblywoobly)

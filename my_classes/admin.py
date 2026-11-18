@@ -15,5 +15,8 @@ if __name__ == '__main__':
     a1 = Admin('Ethel', 36, ['backups', 'security', 'feed cat'])
     a1.duty.append('make coffee')
     print(a1)
+    # is is actually possible to access mangled members:
+    print(a1._Person__name) # we would not aim to do this, but it is part of python
+
 
 

@@ -11,3 +11,7 @@ j = (70, 'Floella', 'Dame')
 
 # we choose to use a class when we wish to bring together related data AND functionality
 # a class lets use combine facts (pieces of data) with functions (stuff we meed to do)
+
+
+
+
