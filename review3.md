@@ -40,6 +40,6 @@ Here is a sample URL
 Use the 'requests' library to get the weather for a (valid) city, then populate a weather instance from the results
 
 From the returned JSON, you can get the weather description like this:
-- results.weather[0].description
+- results['weather'][0]['description']
 and the temperature like this
-- results.main.temp
+- results['main']['temp']
