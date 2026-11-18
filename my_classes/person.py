@@ -1,4 +1,8 @@
 # here we will create our own class
+class OOP:
+    pass
+
+
 class Person(): # the () are optional
     '''This class will encapsulate data related to person
     name (non-empty string) and age (positive integer)'''
@@ -69,3 +73,6 @@ fnDoNothing.wibblywoo = 'wow'
 print(fnDoNothing.wibblywoo)
 # p1.ooblywoobly = 'nonsense'
 # print(p1.ooblywoobly)
+
+o = OOP()
+print(o)

@@ -2,14 +2,21 @@
 # it is always a good idea to have memory efficiency in mind
 # NB Python is not restricted in any practical way: it will make use of as much resource as we give it
 def checkEquality(a, b):
-    if id(a)==id(b):
+    if id(a)==id(b): # are these two things in the same memory location?
         return 'the same value (in the same memory location)'
     else:
         return 'different values (in different memory locations)'
 
 x = 10
 y = 10
-print( checkEquality(x, y) )
+print( checkEquality(x, y) ) # same id
+y +=1
+print( checkEquality(x, y) ) # different id
+x +=1
+print( checkEquality(x, y) ) # .....
 
 # tuples are much less memory hungry than lists
 # tuple (immutable) list (mutable)
+
+r = range(-100, 101)
+print( id(r) ) # this lets us know the memory location of this item

@@ -74,7 +74,7 @@ all my code wil be here:
 > get/set and property decorators @property
 > name mangling (`__`) and `__slots__` (a bit like private)
 > review exercise
-- map and filter
+> map and filter
 
 https://python.org
 https://learnpython.org
@@ -84,3 +84,4 @@ https://pynative.com
 end of course: feedback about the three days
 - BBC Node.js Training Course - 9-11 November 2026
 - https://forms.cloud.microsoft/e/fp0adqhZnk
+
