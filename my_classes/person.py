@@ -7,15 +7,34 @@ class Person(): # the () are optional
     # the __init__ will run once, when we create an instance
     def __init__(self, name, age): # any class function MUST take 'self' as an argument
         self.name = name
-        self.age = age
-
-
+        self.age = age # this line will invoke the 'age' setter function
+    # in python @property is called a 'decorator'
+    @property # getter method (accessor)
+    def name(self):
+        return self.__name
+    @name.setter # setter method (mutator)
+    def name(self, new_name):
+        if type(new_name)==str and new_name != '':
+            self.__name = new_name
+        else:
+            raise TypeError('Name must be a non-empty string')
+    @property
+    def age(self):
+        return self.__age
+    @age.setter
+    def age(self, new_age):
+        if type(new_age)==int and new_age>0:
+            self.__age = new_age
+        else:
+            raise TypeError('Age must be a positive integer')
 
 if __name__ == '__main__':
     # exercise the code within this module
     # we can make instances of our class
-    p1 = Person() # this will make the __init__ method run once
-
+    p1 = Person('Floella', 70) # this will make the __init__ method run once
+    p1.name = True
+    # we use dot notation to access members of the class instance
+    print( p1, p1.name, p1.age, type(p1) )
     # we can make instances of any class
     l1 = list() # short cut is l1 = []
     t1 = tuple()
