@@ -15,7 +15,7 @@ class WeatherGetter():
             results = response.json()
             self.temperature = results['main']['temp']
             self.description = results['weather'][0]['description']
-            weatherReport = Weather(city=self.city, temperature=self.temperature, desc=self.description)
+            weatherReport = Weather(city=city, temp=self.temperature, desc=self.description)
             return weatherReport
         except Exception as err:
             print(err)
