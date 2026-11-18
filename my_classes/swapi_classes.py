@@ -64,12 +64,16 @@ class Planet(Swapi):
 if __name__ == '__main__':
     # exercise this module
     sw = Swapi('Epic', ['ep4','ep5','ep6'])
-    sp = Species('Wookie', 'uuuuugh' ['','',''])
-    pl = Planet('Tatoinne', 'mild' ['', '', ''])
-    # we can mutate members
+    sp = Species('Wookie', 'uuuuugh', ['','',''])
+    pl = Planet('Tatoinne', 'mild', ['', '', ''])
+    # we can mutate members (calls the validation logic in the setter methods)
+    sw.films.append('ep1')
+    sp.language = 'Shyriiwook'
+    pl.name = 'Tatooine'
 
     # we can access members
+    print( sw.name, sp.films, pl.climate )
 
     # no arbitrary extras
+    # pl.umplegrop = 'shoobydoo' # fails
 
-    
