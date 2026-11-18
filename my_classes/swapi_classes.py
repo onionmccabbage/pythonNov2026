@@ -2,10 +2,11 @@
 
 class Swapi():
     '''a top-level class to encapsulate swpai data'''
-    __slots__ = ['__name', '__immut']
-    def __init__(self, n):
+    __slots__ = ['__name', '__immut', '__films']
+    def __init__(self, n, f):
         self.name = n # all swpai data includes a name property
         # suppose we wanted an immutable property
+        self.films = f
         self.__immut = 'cannot be changed'
     # we need get/set methods for 'name'
     @property
@@ -18,12 +19,22 @@ class Swapi():
         else:
             # self.__name = 'default' # we may choose to set a sensible default
             raise TypeError('Name must be a non empty string')
+    @property
+    def films(self):
+        return self.__films
+    @films.setter
+    def films(self, film_list):
+        '''validate we have a list of items (more than zero)'''
+        if type(film_list)==list and len(film_list)>0:
+            self.__films = film_list
+        else:
+            raise TypeError('Films must be a non-empty list')
 
 # we would usually write each class in separate module
 class Species(Swapi):
-    __slots__ = ['__name', '__language']
-    def __init__(self, n, language):
-        super().__init__(n)
+    __slots__ = ['__name', '__language', '__films'] # NB slots are not inherited
+    def __init__(self, n, language, films):
+        super().__init__(n, films)
         self.language = language # this calls the setter method
     @property
     def language(self):
@@ -36,9 +47,9 @@ class Species(Swapi):
             raise TypeError('Language must be a non-empty string')
 
 class Planet(Swapi):
-    __slots__ = ['__name', '__climate']
-    def __init__(self, n, climate):
-        super().__init__(n)
+    __slots__ = ['__name', '__climate', '__films']
+    def __init__(self, n, climate, films):
+        super().__init__(n, films)
         self.climate = climate
     @property
     def climate(self):
