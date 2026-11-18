@@ -10,6 +10,7 @@ class Person(): # the () are optional
     # in python @property is called a 'decorator'
     @property # getter method (accessor)
     def name(self):
+        # __ is called 'name mangling' we may only access it within the class
         return self.__name
     @name.setter # setter method (mutator)
     def name(self, new_name):
@@ -26,11 +27,19 @@ class Person(): # the () are optional
             self.__age = new_age
         else:
             raise TypeError('Age must be a positive integer')
+    def __str__(self):
+        '''Everything in Python has a __str__ method
+         This method is called whenever we 'print' '''
+        return f'{self.name} is {self.age} years old'
 
 if __name__ == '__main__':
     # exercise the code within this module
     # we can make instances of our class
     p2 = Person('Oenid', 32)
+    # can we directly access __name or __age?
+    print(p2.__name, p2.__age) #
+
+
     p2.age = 55 # all good 
     print(p2.age, p2.name)
     p1 = Person('Floella', 70) # this will make the __init__ method run once
