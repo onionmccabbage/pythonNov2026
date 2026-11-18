@@ -37,11 +37,10 @@ all my code wil be here:
 > after lunch review exercise
 > dictionaries, set
 > import, libraries and modules
-- functions and defaults
+> functions and defaults
 > packages (simply a folder containing python files)
 
 #### Tuesday
-- quick review of where we got to
 > using venv
 - if __name__ == '__main__'
 > range, generators

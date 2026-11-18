@@ -2,7 +2,7 @@
 # it is always a good idea to have memory efficiency in mind
 # NB Python is not restricted in any practical way: it will make use of as much resource as we give it
 def checkEquality(a, b):
-    if a==b:
+    if id(a)==id(b):
         return 'the same value (in the same memory location)'
     else:
         return 'different values (in different memory locations)'
