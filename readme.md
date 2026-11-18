@@ -54,7 +54,7 @@ all my code wil be here:
 > using requests (to access web API via HTTP)
 > strings with triple quotes
 > exception handling (try-except etc.)
-- debug tools
+> debug tools
 > resolve the byte writer example   
 > review exercise
 > Text File input and output (also bytes)
@@ -73,7 +73,7 @@ all my code wil be here:
   classes have properties (something belonging to the class) and methods (something the class can do)
 > get/set and property decorators @property
 > name mangling (`__`) and `__slots__` (a bit like private)
-- review exercise
+> review exercise
 - map and filter
 
 https://python.org
