@@ -19,3 +19,19 @@ values_l = ['   Python  ', '    tab', 'Done      ']
 tidy = list( map(tidyUp, values_l)  )
 print(tidy)
 print( type(title_fruits) , title_fruits)
+
+
+# as well as map we may use filter. This lets us apply a filter function across every member of a collection
+def longWord(w):
+    '''only return the word if it is more than 5 letter
+    Otherwise return 'default' '''
+    if len(w)<5:
+        return False # NB any filter function must evaluate to True or False
+    else:
+        return True # this drives whether to include or excluse members of the collection
+
+words = ('Python', 'wibblywoo', 'BBC')
+
+long_words = tuple( filter(longWord, words) )
+
+print( type(long_words), long_words )
