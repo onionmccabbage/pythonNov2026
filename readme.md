@@ -63,6 +63,7 @@ all my code wil be here:
 #### Wednesday
 - quick review of where we got to
 - in Python EVERTHING is an Object - every function, every class every module....
+> whenever we see __nnn__ this belongs to Python. Called dunder
 - any input or output is necessarily slow: I/O bound
 - functions live in classes, which live in modules which live in packages (folder)
 - global and local scope 
