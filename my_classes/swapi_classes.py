@@ -61,3 +61,15 @@ class Planet(Swapi):
         else:
             raise TypeError('Climate must be a non-empty string')
 
+if __name__ == '__main__':
+    # exercise this module
+    sw = Swapi('Epic', ['ep4','ep5','ep6'])
+    sp = Species('Wookie', 'uuuuugh' ['','',''])
+    pl = Planet('Tatoinne', 'mild' ['', '', ''])
+    # we can mutate members
+
+    # we can access members
+
+    # no arbitrary extras
+
+    
